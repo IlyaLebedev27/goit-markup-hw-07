@@ -109,39 +109,23 @@ border: 1px solid var(--border-heder-cl);
 }
 
 
-.header-nav-list{
+.header-nav__list{
 display:flex;
 align-items: center;
 
  }
-.svg-mail{
+.header-nav-adress__icon{
     fill: currentColor;
-    width: 16px;
-    height: 16px;
     margin-right: 10px;
     
     
 }
-.svg-mail:hover,
-.svg-mail:focus,
-.svg-mail:active{
+.header-nav-adress__icon:focus,
+.header-nav-adress__icon:hover,
+.header-nav-adress__icon:active{
     fill: var(--accent-txt-cl);
 }
 
-.svg-smartphone {
-    fill: currentColor;
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    
-
-}
-
-.svg-smartphone:hover,
-.svg-smartphone:focus,
-.svg-smartphone:active {
-    fill: var(--accent-txt-cl);
-}
 
 
 
@@ -168,7 +152,7 @@ align-items: center;
     padding-bottom: 200px;
  }
 
-.webstudio {
+.header-nav__link--webstudio {
     margin-right: 50px;
     font-family:var(--main-font);
     font-weight: 700;
@@ -179,14 +163,14 @@ align-items: center;
     
 }
 
-.header-item{
+.header-nav__item{
     margin-right: 51px;
 }
 
 
- .header-link:hover,
- .header-link:focus,
- .header-link:active {
+ .header-nav__link:hover,
+ .header-nav__link:focus,
+ .header-nav__link:active {
     color:var(--accent-txt-cl)
 }
 
@@ -199,7 +183,7 @@ align-items: center;
 }
 
 
-.header-link {
+.header-nav__link {
 
     font-family: var(--secondary-font);
     font-style: normal;
@@ -211,30 +195,34 @@ align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     transition: 250ms var(--cubiс-fix);
-    
+    color: var(--main-txt-cl);
 }
     
 
-.header-nav-adress-list{
-    color: var(--secondary-txt-cl);
-}
+ .header-nav-adress__decoration{
+    font-family: var(--secondary-font);
+    color:var(--secondary-txt-cl);
+ }
 
 
-.header-nav-adress>li.header-nav-adress-list{
+
+.header-nav-adress__list{
+color: var(--secondary-txt-cl);
     margin-right: 50px;
+    
 }
 
-.header-link-current {
+.header-nav__link--current {
  position: relative;   
 color: var(--accent-txt-cl)
 
     
 }
 
-.header-link-current:hover::after{
+.header-nav__link--current:hover::after{
     opacity: 1;
 }
-.header-link-current::after{
+.header-nav__link--current::after{
     content: "";
     position: absolute;
     left: 0px;
@@ -1136,7 +1124,7 @@ transition: 250ms var(--cubiс-fix);
     margin-bottom: 50px;
 }
 
-.accsent {
+.header-nav__text--accsent{
     color: var(--accent-txt-cl);
 }
 
